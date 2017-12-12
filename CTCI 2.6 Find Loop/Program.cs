@@ -13,8 +13,7 @@ namespace CTCI_2._6_Find_Loop
         {
             PrintHeaderMsg(2, 1, "Remove Duplicates");
 
-            Node head = CreateSinglyLinkedList(1000);
-            Console.WriteLine("List created");            
+            Node head = CreateSinglyLinkedList(1000);    
 
             CreateLoop(head, 500);
 
@@ -120,6 +119,10 @@ namespace CTCI_2._6_Find_Loop
                 n.next = new Node(rnd.Next(0, 1000));
                 n = n.next;
             }
+
+
+            Console.WriteLine("List created with " + count + " nodes");
+            Console.WriteLine();
 
             return head;
         }
